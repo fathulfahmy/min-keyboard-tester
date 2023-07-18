@@ -85,4 +85,8 @@ $(document).keyup(function (e) {
       allBlackKeycap();
     }
   }
+  if(sound){
+    $("audio#coinsfx")[0].pause();
+    $("audio#coinsfx")[0].currentTime = 0;
+  }
 });
