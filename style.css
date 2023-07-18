@@ -1,0 +1,222 @@
+body {
+  min-width: 510px;
+  margin: 50px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+/* HEADER SECTION */
+header {
+  min-width: 510px;
+  max-width: fit-content;
+  margin: 0 auto 20px auto;
+}
+
+#title {
+  width: 620px;
+}
+
+#title,
+h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#title,
+h2 {
+  margin: 2px 0 0 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+#navbar {
+  width: 510px;
+}
+
+/* CONTENT SECTION */
+main {
+  min-width: 510px;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+/* BUTTON DEFAULT */
+button {
+  width: 110px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+.light button {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+/* BUTTON OFF */
+.disabled-button {
+  background-color: #f38ba8;
+  border: 1px solid #f38ba8;
+  color: black;
+}
+
+.light .disabled-button {
+  background-color: #d20f39;
+  border: 1px solid #d20f39;
+  color: white;
+}
+
+button:hover {
+  background-color: #d20f39;
+  border: 1px solid #d20f39;
+  color: white;
+}
+
+.light button:hover {
+  background-color: #f38ba8;
+  border: 1px solid #f38ba8;
+  color: black;
+}
+
+
+/* BUTTON GITHUB */
+#github {
+  background-color: #cba6f7;
+  border: 1px solid #cba6f7;
+  color: black;
+}
+
+.light #github {
+  background-color: #8839ef;
+  border: 1px solid #8839ef;
+  color: white;
+}
+
+#github:hover {
+  background-color: #8839ef;
+  border: 1px solid #8839ef;
+  color: white;
+  text-decoration: none;
+}
+
+.light #github:hover {
+  background-color: #cba6f7;
+  border: 1px solid #cba6f7;
+  color: black;
+  text-decoration: none;
+}
+
+/* BUTTON OTHERS */
+#timeout {
+  width: 125px;
+}
+
+#dark-mode {
+  width: 150px;
+}
+
+/* KEYBOARD ROW */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* NUMPAD ROW */
+.grid-container {
+  display: grid;
+  gap: 5px;
+}
+
+.grid-item1 {
+  display: inline-grid;
+  grid-column: 1 / span 3;
+}
+
+.grid-item2 {
+  display: inline-grid;
+  grid-column: 4 / span 1;
+}
+
+/* KEYCAP DEFAULT */
+.keycap-style {
+  width: 55px;
+  height: 60px;
+  margin: 5px 0;
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  color: black;
+  background-color: white;
+}
+
+.light .keycap-style {
+  color: white;
+  background-color: black;
+}
+
+/* KEYCAP SMALL */
+.keycap-top {
+  width: 51.3px;
+  height: 40px;
+}
+
+.numpad-top {
+  height: 40px;
+}
+
+/* KEYCAP VARIATION */
+.keycap-vertical {
+  height: 130px;
+}
+
+.keycap-15u {
+  padding: 0 1.5px;
+  width: 82.5px;
+}
+
+.keycap-175u {
+  padding: 0 2px;
+  width: 96.25px;
+}
+
+.keycap-2u {
+  padding: 0 3px;
+  width: 110px;
+}
+
+.keycap-225u {
+  padding: 0 3.5px;
+  width: 123.75px;
+}
+
+.keycap-275u {
+  padding: 0 4px;
+  width: 151.25px;
+}
+
+.keycap-625u {
+  padding: 0 6px;
+  width: 343.75px;
+}
+
+/* TEXT */
+.text-top {
+  margin-top: 10px;
+}
+
+.text-double {
+  margin-top: 10px;
+}
