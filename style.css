@@ -237,6 +237,9 @@ button:hover {
 
 /* VIEWPORT < TKL SIZE KEYBOARD */
 @media(max-width: 950px) {
+  body {
+    margin: 40px 5px;
+  }
 
   #navbar {
     width: 330px;
