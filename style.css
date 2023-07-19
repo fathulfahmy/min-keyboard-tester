@@ -1,6 +1,6 @@
 body {
   min-width: fit-content;
-  margin: 40px 20px;
+  margin: 40px auto;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
@@ -238,7 +238,7 @@ button:hover {
 /* VIEWPORT < TKL SIZE KEYBOARD */
 @media(max-width: 950px) {
   body {
-    margin: 40px 5px;
+    margin: 40px auto;
   }
 
   #navbar {
