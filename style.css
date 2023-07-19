@@ -1,6 +1,6 @@
 body {
   min-width: fit-content;
-  margin: 50px 20px;
+  margin: 40px 20px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
@@ -23,7 +23,7 @@ header {
 
 #title h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 33.5px;
   font-weight: bold;
 }
 
@@ -222,6 +222,7 @@ button:hover {
 @media (max-width: 1200px) {
   #title {
     width: 100%;
+    margin-bottom: 20px;
     text-align: center;
   }
 
