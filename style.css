@@ -1,5 +1,5 @@
 body {
-  min-width: 510px;
+  min-width: fit-content;
   margin: 50px 20px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
@@ -13,43 +13,35 @@ body {
 
 /* HEADER SECTION */
 header {
-  min-width: 510px;
-  max-width: fit-content;
+  width: fit-content;
   margin: 0 auto 20px auto;
 }
 
 #title {
-  width: 620px;
+  width: 680px;
 }
 
-#title,
-h1 {
+#title h1 {
   margin: 0;
   font-size: 36px;
   font-weight: bold;
 }
 
-#title,
-h2 {
+#title h2 {
   margin: 2px 0 0 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
-}
-
-#navbar {
-  width: 510px;
 }
 
 /* CONTENT SECTION */
 main {
-  min-width: 510px;
-  max-width: fit-content;
+  width: fit-content;
   margin: 0 auto;
 }
 
 /* BUTTON DEFAULT */
 button {
-  width: 110px;
+  width: fit-content;
   padding: 10px;
   font-size: 16px;
   outline: none;
@@ -119,11 +111,15 @@ button:hover {
 
 /* BUTTON OTHERS */
 #timeout {
-  width: 125px;
+  width: 120px;
+}
+
+#sound {
+  width: 105px;
 }
 
 #dark-mode {
-  width: 150px;
+  width: 140px;
 }
 
 /* KEYBOARD ROW */
@@ -132,6 +128,7 @@ button:hover {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 5px;
+  justify-content: center;
 }
 
 /* NUMPAD ROW */
@@ -157,6 +154,7 @@ button:hover {
   margin: 5px 0;
   font-size: 16px;
   display: inline-flex;
+  text-align: center;
   justify-content: center;
   color: black;
   background-color: white;
@@ -219,4 +217,21 @@ button:hover {
 
 .text-double {
   margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  #title {
+    width: 100%;
+    text-align: center;
+  }
+
+  #navbar {
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 950px) {
+  #primary-container {
+    width: 480px;
+  }
 }
