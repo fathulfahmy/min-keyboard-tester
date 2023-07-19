@@ -134,7 +134,8 @@ button:hover {
 /* NUMPAD ROW */
 .grid-container {
   display: grid;
-  gap: 5px;
+  grid-template-columns: 60px 60px 60px 60px;
+  justify-content: center;
 }
 
 .grid-item1 {
@@ -146,6 +147,7 @@ button:hover {
   display: inline-grid;
   grid-column: 4 / span 1;
 }
+
 
 /* KEYCAP DEFAULT */
 .keycap-style {
@@ -177,6 +179,7 @@ button:hover {
 
 /* KEYCAP VARIATION */
 .keycap-vertical {
+  margin-left: 2px;
   height: 130px;
 }
 
@@ -219,6 +222,7 @@ button:hover {
   margin-top: 10px;
 }
 
+/* VIEWPORT < FULL SIZE KEYBOARD */
 @media (max-width: 1200px) {
   #title {
     width: 100%;
@@ -231,8 +235,31 @@ button:hover {
   }
 }
 
+/* VIEWPORT < TKL SIZE KEYBOARD */
 @media(max-width: 950px) {
+
+  #navbar {
+    width: 330px;
+  }
+
+  button,
+  #timeout,
+  #sound,
+  #dark-mode {
+    width: 100%;
+  }
+
+  #primary-section,
+  numpad-section {
+    width: 100%;
+  }
+
   #primary-container {
-    width: 480px;
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  #numpad-container {
+    margin: 0 auto;
   }
 }
