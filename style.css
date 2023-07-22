@@ -18,7 +18,7 @@ header {
 }
 
 #title {
-  width: 680px;
+  width: 670px;
 }
 
 #title h1 {
@@ -41,8 +41,10 @@ main {
 
 /* BUTTON DEFAULT */
 button {
+  float: left;
   width: fit-content;
   padding: 10px;
+  margin: 2px;
   font-size: 16px;
   outline: none;
   border: 1px solid white;
@@ -81,6 +83,17 @@ button:hover {
   color: black;
 }
 
+button:active {
+  background-color: #f38ba8;
+  border: 1px solid #f38ba8;
+  color: black;
+}
+
+.light button:active {
+  background-color: #d20f39;
+  border: 1px solid #d20f39;
+  color: white;
+}
 
 /* BUTTON GITHUB */
 #github {
@@ -107,6 +120,18 @@ button:hover {
   border: 1px solid #cba6f7;
   color: black;
   text-decoration: none;
+}
+
+#github:active {
+  background-color: #cba6f7;
+  border: 1px solid #cba6f7;
+  color: black;
+}
+
+.light #github:active {
+  background-color: #8839ef;
+  border: 1px solid #8839ef;
+  color: white;
 }
 
 /* BUTTON OTHERS */
